@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact us — Trafyx</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-inner">
+  <a href="index.html" class="nav-logo"><div class="nav-logo-mark">Tx</div><span>Trafyx</span></a>
+  <div class="nav-links"><a href="index.html">Home</a><a href="features/index.html">Features</a><a href="features/mira.html">Mira AI</a><a href="features/waas.html">WaaS</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a></div>
+  <div class="nav-cta"><button class="theme-toggle" aria-label="Toggle theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><a href="index.html#cta" class="btn btn-primary">Book demo</a><button class="nav-menu-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div>
+</div></nav>
+
+<section class="hero" style="padding-bottom: 20px;">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="wrap hero-inner">
+    <div style="max-width: 720px;">
+      <span class="eyebrow">Contact us</span>
+      <h1 class="mt-1">Talk to <span class="gradient-text">a real human.</span></h1>
+      <p class="lead mt-2">Same-day response, always. Whether you're booking a demo, migrating from another platform, or just want to see how Mira handles a live ticket — we're here.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact grid: form + methods -->
+<section style="padding-top: 20px;">
+  <div class="wrap">
+    <div style="display: grid; grid-template-columns: 1fr 340px; gap: 40px;" class="contact-grid">
+      <!-- Form -->
+      <div class="card">
+        <h3>Send us a message</h3>
+        <p style="margin-bottom: 16px;">Same-day response, always.</p>
+        <!-- FORMSPREE SETUP:
+             1. Go to https://formspree.io and sign up with sales@trafyx.ai
+             2. Create a new form — copy the form ID (looks like "xzbqogld")
+             3. Replace YOUR_FORMSPREE_ID below with your ID
+             4. First submission requires clicking a verification link Formspree sends
+        -->
+        <form
+          action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+          method="POST"
+          data-contact-form
+          style="display: grid; gap: 12px;"
+        >
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+            <div>
+              <label style="font-size: 0.78rem; color: var(--text-dim); display: block; margin-bottom: 4px;">Full name</label>
+              <input type="text" name="name" required placeholder="Your name" style="width: 100%; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; color: var(--text); font-family: inherit; font-size: 0.88rem;">
+            </div>
+            <div>
+              <label style="font-size: 0.78rem; color: var(--text-dim); display: block; margin-bottom: 4px;">Company</label>
+              <input type="text" name="company" placeholder="Your company" style="width: 100%; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; color: var(--text); font-family: inherit; font-size: 0.88rem;">
+            </div>
+          </div>
+          <div>
+            <label style="font-size: 0.78rem; color: var(--text-dim); display: block; margin-bottom: 4px;">Email</label>
+            <input type="email" name="email" required placeholder="you@company.com" style="width: 100%; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; color: var(--text); font-family: inherit; font-size: 0.88rem;">
+          </div>
+          <div>
+            <label style="font-size: 0.78rem; color: var(--text-dim); display: block; margin-bottom: 4px;">What can we help with?</label>
+            <select name="topic" style="width: 100%; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; color: var(--text); font-family: inherit; font-size: 0.88rem;">
+              <option>Book a demo</option>
+              <option>Migrate from another platform</option>
+              <option>MSP / WaaS onboarding</option>
+              <option>Technical question</option>
+              <option>Partnership</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size: 0.78rem; color: var(--text-dim); display: block; margin-bottom: 4px;">Message</label>
+            <textarea name="message" rows="4" required placeholder="Tell us about your setup — how many subscribers, what network gear, what pain points..." style="width: 100%; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; color: var(--text); font-family: inherit; font-size: 0.88rem; resize: vertical;"></textarea>
+          </div>
+          <!-- Formspree honeypot spam filter -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <!-- Custom subject line + reply-to -->
+          <input type="hidden" name="_subject" value="New Trafyx.ai contact form submission">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+            <div class="submit-msg" style="display: none; color: var(--success); font-size: 0.85rem;">✓ Message sent. We'll be in touch shortly.</div>
+            <div class="submit-err" style="display: none; color: var(--danger); font-size: 0.85rem;">Something went wrong. Please email sales@trafyx.ai directly.</div>
+            <button type="submit" class="btn btn-primary" style="margin-left: auto;">Send message</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact methods -->
+      <div>
+        <div class="card" style="margin-bottom: 12px;">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; color: var(--text-mute); text-transform: uppercase; margin-bottom: 6px;">Sales</div>
+          <a href="mailto:sales@trafyx.ai" style="color: var(--brand); text-decoration: none; font-weight: 500;">sales@trafyx.ai</a>
+          <p style="font-size: 0.82rem; margin-top: 4px;">For demos, migration, and pricing conversations.</p>
+        </div>
+        <div class="card" style="margin-bottom: 12px;">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; color: var(--text-mute); text-transform: uppercase; margin-bottom: 6px;">Support</div>
+          <a href="mailto:support@trafyx.ai" style="color: var(--brand); text-decoration: none; font-weight: 500;">support@trafyx.ai</a>
+          <p style="font-size: 0.82rem; margin-top: 4px;">For existing customers. 24/7 for Growth and MSP tiers.</p>
+        </div>
+        <div class="card" style="margin-bottom: 12px;">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; color: var(--text-mute); text-transform: uppercase; margin-bottom: 6px;">Security</div>
+          <a href="mailto:security@trafyx.ai" style="color: var(--brand); text-decoration: none; font-weight: 500;">security@trafyx.ai</a>
+          <p style="font-size: 0.82rem; margin-top: 4px;">Responsible disclosure. PGP key on request.</p>
+        </div>
+        <div class="card">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; color: var(--text-mute); text-transform: uppercase; margin-bottom: 6px;">Office</div>
+          <div style="font-size: 0.88rem; line-height: 1.6;">Riser Technologies<br>SHAMS, Sharjah<br>Dubai, United Arab Emirates</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ mini -->
+<section style="background: var(--bg-alt);">
+  <div class="wrap">
+    <div class="section-header"><span class="eyebrow">Common questions</span><h2>Before you write.</h2></div>
+    <div class="grid-2" style="max-width: 900px; margin: 0 auto;">
+      <div class="card"><h3 style="font-size: 0.98rem;">How long does a demo take?</h3><p style="font-size: 0.85rem;">Twenty to thirty minutes. We show your specific scenario with seeded data, not a canned walkthrough.</p></div>
+      <div class="card"><h3 style="font-size: 0.98rem;">Do you offer trials?</h3><p style="font-size: 0.85rem;">Yes. 30 days on real infrastructure, with your data. No credit card required to start.</p></div>
+      <div class="card"><h3 style="font-size: 0.98rem;">Can you help me migrate?</h3><p style="font-size: 0.85rem;">Yes. Bulk CSV import for subscribers, plans, and payments. Supervised RADIUS cutover.</p></div>
+      <div class="card"><h3 style="font-size: 0.98rem;">Do you serve outside UAE?</h3><p style="font-size: 0.85rem;">Yes. Currently operating in UAE, Saudi Arabia, Oman, and expanding through wider MENA.</p></div>
+    </div>
+  </div>
+</section>
+
+<style>@media (max-width: 800px) { .contact-grid { grid-template-columns: 1fr !important; } }</style>
+
+<div data-footer="."></div>
+<script src="app.js"></script>
+<script src="footer.js"></script>
+</body>
+</html>

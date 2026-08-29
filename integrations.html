@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integrations — Trafyx</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-inner">
+  <a href="index.html" class="nav-logo"><div class="nav-logo-mark">Tx</div><span>Trafyx</span></a>
+  <div class="nav-links"><a href="./index.html">Home</a><a href="features/index.html">Features</a><a href="features/mira.html">Mira AI</a><a href="features/waas.html">WaaS</a><a href="about.html">About</a><a href="integrations.html" class="active">Integrations</a><a href="security.html">Security</a><a href="./contact.html">Contact</a></div>
+  <div class="nav-cta"><button class="theme-toggle" aria-label="Toggle theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><a href="index.html#cta" class="btn btn-primary">Book demo</a><button class="nav-menu-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div>
+</div></nav>
+
+<section class="hero">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="wrap hero-inner">
+    <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <span class="eyebrow" style="justify-content: center;">Integrations</span>
+      <h1 class="mt-1">Plays nicely with<br><span class="gradient-text">your actual network.</span></h1>
+      <p class="lead mt-2">Trafyx speaks standard RADIUS, standard SMTP, and standard REST. Every major vendor works. Where we've built a first-class integration, it's below.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div style="margin-bottom: 50px;">
+      <h3 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.14em; color: var(--text-mute); text-transform: uppercase; margin-bottom: 20px;">Network Equipment</h3>
+      <div class="logo-grid">
+        <div class="logo-cell">MikroTik</div>
+        <div class="logo-cell">Ruckus SmartZone</div>
+        <div class="logo-cell">Cisco BNG</div>
+        <div class="logo-cell">Huawei OLT</div>
+        <div class="logo-cell">Aruba</div>
+        <div class="logo-cell">Ubiquiti</div>
+        <div class="logo-cell">Cisco Meraki</div>
+        <div class="logo-cell">FreeRADIUS</div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 50px;">
+      <h3 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.14em; color: var(--text-mute); text-transform: uppercase; margin-bottom: 20px;">Payments</h3>
+      <div class="logo-grid">
+        <div class="logo-cell">Telr</div>
+        <div class="logo-cell">PayTabs</div>
+        <div class="logo-cell">Stripe</div>
+        <div class="logo-cell">Network International</div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 50px;">
+      <h3 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.14em; color: var(--text-mute); text-transform: uppercase; margin-bottom: 20px;">Business Tools</h3>
+      <div class="logo-grid">
+        <div class="logo-cell">Zoho Books</div>
+        <div class="logo-cell">Slack</div>
+        <div class="logo-cell">Resend SMTP</div>
+        <div class="logo-cell">Twilio SMS</div>
+        <div class="logo-cell">Google Workspace</div>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.14em; color: var(--text-mute); text-transform: uppercase; margin-bottom: 20px;">Infrastructure</h3>
+      <div class="logo-grid">
+        <div class="logo-cell">Anthropic Claude</div>
+        <div class="logo-cell">Supabase</div>
+        <div class="logo-cell">Vercel</div>
+        <div class="logo-cell">Cloudflare</div>
+        <div class="logo-cell">Next.js</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Detail cards for the important ones -->
+<section style="background: var(--bg-alt);">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="eyebrow">The important ones, in detail</span>
+      <h2>Not just logos.</h2>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <h3 style="font-size: 1.05rem;">FreeRADIUS + Postgres backend</h3>
+        <p>Managed FreeRADIUS 3.x on our hardened infrastructure. Queries hit our Supabase Postgres via session pooler. You add the NAS in the UI, we push config.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size: 1.05rem;">Ruckus SmartZone Called-Station-Id</h3>
+        <p>Parse <span class="mono">AA-BB-CC-DD-EE-FF:SSID_NAME</span> to route auth per SSID to per-tenant policies. First-class for WaaS.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size: 1.05rem;">MikroTik CoA + PPPoE</h3>
+        <p>Change-of-Authorization for session bouncing after payment / plan change. PPPoE integration lands Q4.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size: 1.05rem;">Anthropic Claude</h3>
+        <p>Mira runs on <span class="mono">claude-sonnet-4-6</span>. Your data never trains a model. Every prompt is scoped to your tenant.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size: 1.05rem;">Zoho Books</h3>
+        <p>Two-way sync of invoices and payments. GL codes mapped per plan. Reseller commissions posted to the right ledger automatically.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size: 1.05rem;">Resend SMTP</h3>
+        <p>Transactional email out of the box. Per-tenant SMTP config stored in <span class="mono">system_settings</span> — bring your own if you prefer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta"><div class="wrap"><div class="cta-block">
+  <span class="eyebrow" style="justify-content:center;">Missing something?</span>
+  <h2 class="mt-1">Tell us what you use.<br>We build integrations weekly.</h2>
+  <div class="cta-buttons"><a href="mailto:integrations@trafyx.ai" class="btn btn-primary">Request integration</a><a href="docs.html" class="btn btn-ghost">API docs</a></div>
+</div></div></section>
+
+<div data-footer="."></div>
+<script src="app.js"></script>
+<script src="footer.js"></script>
+</body>
+</html>

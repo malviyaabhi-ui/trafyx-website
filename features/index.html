@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All Features — Trafyx</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-inner">
+  <a href="../index.html" class="nav-logo"><div class="nav-logo-mark">Tx</div><span>Trafyx</span></a>
+  <div class="nav-links"><a href="../index.html">Home</a><a href="index.html" class="active">Features</a><a href="mira.html">Mira AI</a><a href="waas.html">WaaS</a><a href="../contact.html">Contact</a></div>
+  <div class="nav-cta"><button class="theme-toggle" aria-label="Toggle theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><a href="../index.html#cta" class="btn btn-primary">Book demo</a><button class="nav-menu-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div>
+</div></nav>
+
+<section class="hero" style="padding-bottom: 20px;">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="wrap hero-inner">
+    <div style="max-width: 800px;">
+      <span class="eyebrow">Every feature, one page</span>
+      <h1 class="mt-1">The <span class="gradient-text">complete platform,</span> in twelve modules.</h1>
+      <p class="lead mt-2">Every Trafyx feature listed below is live, in production, and included in every tier. Click any card to go deeper.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Grouped by category -->
+<section style="padding-top: 12px;">
+  <div class="wrap">
+
+    <!-- CATEGORY: The AI Layer -->
+    <h2 style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.16em; color: var(--text-mute); text-transform: uppercase; margin-bottom: 14px;">The AI layer</h2>
+    <div class="feat-grid feat-grid-3">
+      <a href="mira.html" class="feat-card feat-card-glow">
+        <div class="feat-visual" style="background: linear-gradient(135deg, rgba(124,92,255,0.22), rgba(0,194,255,0.12));">
+          <svg viewBox="0 0 200 100" style="width: 100%; height: 100%;"><g fill="none" stroke="#7C5CFF" stroke-width="1.5" opacity="0.7"><path d="M60 50 L100 30 L140 50 L100 70 Z"/><line x1="60" y1="50" x2="140" y2="50"/><line x1="100" y1="30" x2="100" y2="70"/></g><circle cx="60" cy="50" r="6" fill="#7C5CFF"/><circle cx="100" cy="30" r="6" fill="#00C2FF"><animate attributeName="r" values="6;9;6" dur="2.5s" repeatCount="indefinite"/></circle><circle cx="140" cy="50" r="6" fill="#7C5CFF"/><circle cx="100" cy="70" r="6" fill="#22D3B4"/></svg>
+        </div>
+        <div class="feat-body">
+          <div class="feat-head"><h3>Mira AI</h3><span class="badge badge-accent">6 fronts</span></div>
+          <p>Autonomous ticket handling, dunning decisions, NOC monitoring, portal chat, staff analyst, and config-by-conversation.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- CATEGORY: Network -->
+    <h2 style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.16em; color: var(--text-mute); text-transform: uppercase; margin: 28px 0 14px;">Network &amp; access</h2>
+    <div class="feat-grid feat-grid-3">
+      <a href="radius.html" class="feat-card">
+        <div class="feat-visual" style="background: linear-gradient(135deg, rgba(0,194,255,0.14), rgba(34,211,180,0.06));">
+          <svg viewBox="0 0 200 100" style="width: 100%; height: 100%;"><g><rect x="60" y="20" width="80" height="16" rx="3" fill="#1A2137" stroke="#00C2FF" stroke-opacity="0.6"/><rect x="60" y="42" width="80" height="16" rx="3" fill="#1A2137" stroke="#00C2FF" stroke-opacity="0.6"/><rect x="60" y="64" width="80" height="16" rx="3" fill="#1A2137" stroke="#00C2FF" stroke-opacity="0.6"/><circle cx="130" cy="28" r="2" fill="#22D3B4"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/></circle><circle cx="130" cy="50" r="2" fill="#22D3B4"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" begin="0.5s" repeatCount="indefinite"/></circle><circle cx="130" cy="72" r="2" fill="#FFB547"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" begin="1s" repeatCount="indefinite"/></circle></g></svg>
+        </div>
+        <div class="feat-body">
+          <h3>RADIUS &amp; AAA</h3>
+          <p>Managed FreeRADIUS 3.x reading directly from Postgres. Ruckus, MikroTik, Cisco, Huawei — anything RFC 2865.</p>
+        </div>
+      </a>
+
+      <a href="waas.html" class="feat-card">
+        <div class="feat-visual" style="background: linear-gradient(135deg, rgba(0,194,255,0.14), rgba(124,92,255,0.06));">
+          <svg viewBox="0 0 200 100" style="width: 100%; height: 100%;"><g fill="none" stroke="#00C2FF" stroke-width="2" opacity="0.7" stroke-linecap="round"><path d="M100 80 A 30 30 0 0 1 130 80"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/></path><path d="M100 80 A 45 45 0 0 1 145 80"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" begin="0.3s" repeatCount="indefinite"/></path><path d="M100 80 A 60 60 0 0 1 160 80"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" begin="0.6s" repeatCount="indefinite"/></path></g><circle cx="100" cy="80" r="4" fill="#00C2FF"/></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Multi-tenant WaaS</h3>
+          <p>Run many independent ISP tenants over shared APs. SSID-based routing. Per-tenant portals and billing.</p>
+        </div>
+      </a>
+
+      <a href="noc.html" class="feat-card">
+        <div class="feat-visual" style="background: linear-gradient(135deg, rgba(255,84,112,0.12), rgba(0,194,255,0.06));">
+          <svg viewBox="0 0 200 100" style="width: 100%; height: 100%;"><path d="M20 60 L45 60 L55 30 L75 80 L95 40 L115 55 L135 50 L155 25 L180 45" stroke="#00C2FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="180" cy="45" r="4" fill="#FF5470"><animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite"/></circle></svg>
+        </div>
+        <div class="feat-body">
+          <h3>NOC &amp; Intelligence</h3>
+          <p>Live session monitoring. Mira NOC Watch auto-creates critical tickets on outages and auto-resolves on recovery.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- CATEGORY: Subscriber ops -->
+    <h2 style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.16em; color: var(--text-mute); text-transform: uppercase; margin: 28px 0 14px;">Subscriber operations</h2>
+    <div class="feat-grid feat-grid-3">
+      <a href="subscribers.html" class="feat-card">
+        <div class="feat-visual" style="background: linear-gradient(135deg, rgba(0,194,255,0.14), rgba(124,92,255,0.06));">
+          <svg viewBox="0 0 200 100" style="width: 100%; height: 100%;"><g><circle cx="60" cy="45" r="10" fill="#1A2137" stroke="#00C2FF"/><rect x="45" y="60" width="30" height="18" rx="9" fill="#1A2137" stroke="#00C2FF"/><circle cx="100" cy="45" r="10" fill="#1A2137" stroke="#7C5CFF"/><rect x="85" y="60" width="30" height="18" rx="9" fill="#1A2137" stroke="#7C5CFF"/><circle cx="140" cy="45" r="10" fill="#1A2137" stroke="#22D3B4"/><rect x="125" y="60" width="30" height="18" rx="9" fill="#1A2137" stroke="#22D3B4"/></g></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Subscribers</h3>
+          <p>Full lifecycle — pending, active, suspended, terminated. PPPoE, IPoE, hotspot. Bulk import from legacy systems.</p>
+        </div>
+      </a>
+
+      <a href="portal.html" class="feat-card">
+        <div class="feat-visual" style="background: linear-gradient(135deg, rgba(124,92,255,0.14), rgba(0,194,255,0.06));">
+          <svg viewBox="0 0 200 100" style="width: 100%; height: 100%;"><g><rect x="80" y="10" width="40" height="80" rx="6" fill="#1A2137" stroke="#7C5CFF"/><rect x="84" y="16" width="32" height="52" rx="2" fill="#0F1730"/><rect x="88" y="22" width="24" height="4" rx="1" fill="#22D3B4"/><rect x="88" y="32" width="16" height="3" rx="1" fill="#00C2FF" opacity="0.6"/><rect x="88" y="40" width="20" height="3" rx="1" fill="#00C2FF" opacity="0.4"/><rect x="88" y="48" width="12" height="3" rx="1" fill="#00C2FF" opacity="0.5"/><circle cx="100" cy="80" r="3" fill="#00C2FF"/></g></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Subscriber portal</h3>
+          <p>White-label self-care. Live connection status, usage charts, invoices, tickets, plan changes routed through Mira.</p>
+        </div>
+      </a>
+
+      <a href="helpdesk.html" class="feat-card">
+        <div class="feat-visual" style="background: linear-gradient(135deg, rgba(255,181,71,0.12), rgba(124,92,255,0.06));">
+          <svg viewBox="0 0 200 100" style="width: 100%; height: 100%;"><g><rect x="50" y="18" width="100" height="20" rx="4" fill="#1A2137" stroke="#FFB547" stroke-opacity="0.6"/><rect x="55" y="25" width="4" height="6" fill="#FFB547"/><rect x="50" y="44" width="100" height="20" rx="4" fill="#1A2137" stroke="#00C2FF" stroke-opacity="0.6"/><rect x="55" y="51" width="4" height="6" fill="#00C2FF"/><rect x="50" y="70" width="100" height="20" rx="4" fill="#1A2137" stroke="#22D3B4" stroke-opacity="0.6"/><rect x="55" y="77" width="4" height="6" fill="#22D3B4"/></g></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Helpdesk</h3>
+          <p>SLA tracking, priority, internal notes, reply threads. Every new ticket triggers Mira, who acts or escalates.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- CATEGORY: Money -->
+    <h2 style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.16em; color: var(--text-mute); text-transform: uppercase; margin: 28px 0 14px;">Money &amp; channel</h2>
+    <div class="feat-grid feat-grid-3">
+      <a href="billing.html" class="feat-card">
+        <div class="feat-visual" style="background: linear-gradient(135deg, rgba(34,211,180,0.12), rgba(0,194,255,0.06));">
+          <svg viewBox="0 0 200 100" style="width: 100%; height: 100%;"><g><rect x="65" y="15" width="70" height="70" rx="4" fill="#1A2137" stroke="#22D3B4" stroke-opacity="0.6"/><line x1="72" y1="30" x2="128" y2="30" stroke="#8A93A6" stroke-width="0.8"/><line x1="72" y1="40" x2="115" y2="40" stroke="#8A93A6" stroke-width="0.8"/><line x1="72" y1="50" x2="120" y2="50" stroke="#8A93A6" stroke-width="0.8"/><line x1="72" y1="60" x2="110" y2="60" stroke="#8A93A6" stroke-width="0.8"/><rect x="72" y="70" width="56" height="10" rx="2" fill="#22D3B4" opacity="0.2"/><text x="100" y="78" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#22D3B4">AED 299</text></g></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Billing &amp; Invoices</h3>
+          <p>Three-step generate flow with duplicate prevention. Postpaid, prepaid, wallet-backed. Native VAT, credit notes.</p>
+        </div>
+      </a>
+
+      <a href="prepaid.html" class="feat-card">
+        <div class="feat-visual" style="background: linear-gradient(135deg, rgba(0,194,255,0.14), rgba(34,211,180,0.06));">
+          <svg viewBox="0 0 200 100" style="width: 100%; height: 100%;"><g><rect x="55" y="30" width="90" height="50" rx="6" fill="#1A2137" stroke="#00C2FF" stroke-opacity="0.6"/><rect x="55" y="45" width="90" height="8" fill="#0F1730"/><circle cx="130" cy="65" r="8" fill="#22D3B4" opacity="0.3"/><circle cx="120" cy="65" r="8" fill="#00C2FF" opacity="0.5"/><text x="70" y="75" font-family="JetBrains Mono" font-size="9" fill="#00C2FF">AED 42.50</text></g></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Prepaid &amp; wallet</h3>
+          <p>Balance-based charging. Top up, deduct, expiry checks. Voucher redemption previews the cycle before commit.</p>
+        </div>
+      </a>
+
+      <a href="vouchers.html" class="feat-card">
+        <div class="feat-visual" style="background: linear-gradient(135deg, rgba(255,181,71,0.12), rgba(0,194,255,0.06));">
+          <svg viewBox="0 0 200 100" style="width: 100%; height: 100%;"><g><path d="M60 25 L140 25 A 4 4 0 0 1 144 29 L144 46 A 4 4 0 0 0 144 54 L144 71 A 4 4 0 0 1 140 75 L60 75 A 4 4 0 0 1 56 71 L56 54 A 4 4 0 0 0 56 46 L56 29 A 4 4 0 0 1 60 25 Z" fill="#1A2137" stroke="#FFB547" stroke-opacity="0.6"/><line x1="100" y1="30" x2="100" y2="70" stroke="#FFB547" stroke-opacity="0.3" stroke-dasharray="2 2"/><g stroke="#FFB547" stroke-width="1.5" opacity="0.7"><line x1="65" y1="42" x2="65" y2="58"/><line x1="70" y1="42" x2="70" y2="58"/><line x1="74" y1="42" x2="74" y2="58"/><line x1="78" y1="42" x2="78" y2="58"/><line x1="82" y1="42" x2="82" y2="58"/><line x1="87" y1="42" x2="87" y2="58"/></g><text x="120" y="55" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#FFB547">AED 20</text></g></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Vouchers &amp; hotspot</h3>
+          <p>Batch generate. SMS delivery. Redeem into a wallet or a standalone hotspot session. Face-value tracking.</p>
+        </div>
+      </a>
+
+      <a href="pricebooks.html" class="feat-card">
+        <div class="feat-visual" style="background: linear-gradient(135deg, rgba(124,92,255,0.14), rgba(255,181,71,0.06));">
+          <svg viewBox="0 0 200 100" style="width: 100%; height: 100%;"><g><rect x="60" y="35" width="16" height="50" rx="2" fill="#1A2137" stroke="#7C5CFF" stroke-opacity="0.7"/><rect x="80" y="25" width="16" height="60" rx="2" fill="#1A2137" stroke="#00C2FF" stroke-opacity="0.7"/><rect x="100" y="45" width="16" height="40" rx="2" fill="#1A2137" stroke="#22D3B4" stroke-opacity="0.7"/><rect x="120" y="20" width="16" height="65" rx="2" fill="#1A2137" stroke="#FFB547" stroke-opacity="0.7"/></g></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Price books</h3>
+          <p>Per-reseller pricing. Override prices, hide plans. Enforced at invoicing and in the subscriber portal.</p>
+        </div>
+      </a>
+
+      <a href="resellers.html" class="feat-card">
+        <div class="feat-visual" style="background: linear-gradient(135deg, rgba(0,194,255,0.14), rgba(124,92,255,0.06));">
+          <svg viewBox="0 0 200 100" style="width: 100%; height: 100%;"><g><rect x="85" y="15" width="30" height="14" rx="3" fill="#0F1730" stroke="#00C2FF"/><line x1="100" y1="29" x2="100" y2="42" stroke="#7C5CFF" opacity="0.6"/><line x1="60" y1="42" x2="140" y2="42" stroke="#7C5CFF" opacity="0.6"/><line x1="60" y1="42" x2="60" y2="55" stroke="#7C5CFF" opacity="0.6"/><line x1="100" y1="42" x2="100" y2="55" stroke="#7C5CFF" opacity="0.6"/><line x1="140" y1="42" x2="140" y2="55" stroke="#7C5CFF" opacity="0.6"/><rect x="45" y="55" width="30" height="14" rx="3" fill="#0F1730" stroke="#7C5CFF"/><rect x="85" y="55" width="30" height="14" rx="3" fill="#0F1730" stroke="#7C5CFF"/><rect x="125" y="55" width="30" height="14" rx="3" fill="#0F1730" stroke="#7C5CFF"/><line x1="60" y1="69" x2="60" y2="80" stroke="#22D3B4" opacity="0.5"/><line x1="140" y1="69" x2="140" y2="80" stroke="#22D3B4" opacity="0.5"/><rect x="52" y="80" width="16" height="10" rx="2" fill="#0F1730" stroke="#22D3B4" stroke-opacity="0.6"/><rect x="132" y="80" width="16" height="10" rx="2" fill="#0F1730" stroke="#22D3B4" stroke-opacity="0.6"/></g></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Resellers</h3>
+          <p>Credit limits, balances, activation, and per-reseller price books. Their own login, their own plan visibility.</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta"><div class="wrap"><div class="cta-block">
+  <span class="eyebrow" style="justify-content:center;">Ready to see it live?</span>
+  <h2 class="mt-1">Book a demo — 20 minutes with a real engineer.</h2>
+  <div class="cta-buttons"><a href="../contact.html" class="btn btn-primary">Book demo</a></div>
+</div></div></section>
+
+<div data-footer="../."></div>
+<script src="../app.js"></script>
+<script src="../footer.js"></script>
+</body>
+</html>

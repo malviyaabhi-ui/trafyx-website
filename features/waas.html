@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WaaS · Multi-tenant WiFi — Trafyx</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><div class="nav-logo-mark">Tx</div><span>Trafyx</span></a>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="../features/index.html">Features</a>
+      <a href="mira.html">Mira AI</a>
+      <a href="waas.html" class="active">WaaS</a>
+      <a href="billing.html">Billing</a>
+      <a href="radius.html">RADIUS</a>
+      <a href="portal.html">Portal</a>
+      <a href="noc.html">NOC</a>
+    <a href="../contact.html">Contact</a></div>
+    <div class="nav-cta">
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="../index.html#cta" class="btn btn-primary">Book demo</a>
+      <button class="nav-menu-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="wrap hero-inner">
+    <div style="max-width: 900px;">
+      <span class="eyebrow">WaaS · Multi-tenant</span>
+      <h1 class="mt-1">One MSP.<br>Many independent ISPs.<br><span class="gradient-text">Shared radio.</span></h1>
+      <p class="lead mt-2">You own the outdoor network. Each of your customers runs a fully-independent ISP business on their own SSID — their pricing, their subscribers, their vouchers, their portal. Trafyx routes and isolates them all.</p>
+    </div>
+
+    <!-- SSID routing visual -->
+    <div class="mockup mt-4" style="max-width: 1100px; margin: 32px auto 0;">
+      <div class="mockup-bar">
+        <div class="mockup-dots"><span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span></div>
+        <div class="mockup-url">trafyx.ai / waas / ssid-routing</div>
+        <span class="badge badge-success badge-dot">4 SSIDs live</span>
+      </div>
+      <div class="mockup-body">
+        <svg viewBox="0 0 1000 480" style="width: 100%; height: auto;">
+          <defs>
+            <linearGradient id="f-blue" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00C2FF" stop-opacity="0"/><stop offset="0.5" stop-color="#00C2FF"/><stop offset="1" stop-color="#00C2FF" stop-opacity="0"/></linearGradient>
+            <linearGradient id="f-teal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22D3B4" stop-opacity="0"/><stop offset="0.5" stop-color="#22D3B4"/><stop offset="1" stop-color="#22D3B4" stop-opacity="0"/></linearGradient>
+            <linearGradient id="f-violet" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7C5CFF" stop-opacity="0"/><stop offset="0.5" stop-color="#7C5CFF"/><stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/></linearGradient>
+            <linearGradient id="f-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFB547" stop-opacity="0"/><stop offset="0.5" stop-color="#FFB547"/><stop offset="1" stop-color="#FFB547" stop-opacity="0"/></linearGradient>
+          </defs>
+
+          <!-- AP in center-left -->
+          <g transform="translate(80, 190)">
+            <circle cx="60" cy="60" r="55" fill="#1A2137" stroke="#00C2FF" stroke-width="1.5"/>
+            <circle cx="60" cy="60" r="55" fill="none" stroke="#00C2FF" stroke-opacity="0.3">
+              <animate attributeName="r" from="55" to="80" dur="2s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" from="0.6" to="0" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <svg x="30" y="30" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#00C2FF" stroke-width="1.5">
+              <path d="M5 12.55a11 11 0 0 1 14 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
+            </svg>
+            <text x="60" y="145" text-anchor="middle" font-family="Space Grotesk" font-size="13" fill="#E4E7EC">Ruckus T350</text>
+            <text x="60" y="163" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#8A93A6">MAC AA-BB-CC-DD-EE-FF</text>
+          </g>
+
+          <!-- Called-Station-Id column -->
+          <g font-family="JetBrains Mono" font-size="10">
+            <text x="290" y="60" fill="#00C2FF" letter-spacing="1.4">CALLED-STATION-ID</text>
+
+            <rect x="270" y="80" width="220" height="46" rx="8" fill="#1A2137" stroke="#232B47"/>
+            <text x="285" y="102" fill="#E4E7EC">AA-BB-CC-DD-EE-FF:</text>
+            <text x="285" y="118" fill="#00C2FF">MARINA_CAFE</text>
+
+            <rect x="270" y="140" width="220" height="46" rx="8" fill="#1A2137" stroke="#232B47"/>
+            <text x="285" y="162" fill="#E4E7EC">AA-BB-CC-DD-EE-FF:</text>
+            <text x="285" y="178" fill="#22D3B4">CORNICHE_HOTEL</text>
+
+            <rect x="270" y="200" width="220" height="46" rx="8" fill="#1A2137" stroke="#232B47"/>
+            <text x="285" y="222" fill="#E4E7EC">AA-BB-CC-DD-EE-FF:</text>
+            <text x="285" y="238" fill="#7C5CFF">DUNE_FIBRE</text>
+
+            <rect x="270" y="260" width="220" height="46" rx="8" fill="#1A2137" stroke="#232B47"/>
+            <text x="285" y="282" fill="#E4E7EC">AA-BB-CC-DD-EE-FF:</text>
+            <text x="285" y="298" fill="#FFB547">GUEST_EVENT</text>
+          </g>
+
+          <!-- Arrow / routing -->
+          <g stroke-width="1.5" fill="none">
+            <path d="M 200 220 L 270 103" stroke="url(#f-blue)"/>
+            <path d="M 200 235 L 270 163" stroke="url(#f-teal)"/>
+            <path d="M 200 250 L 270 223" stroke="url(#f-violet)"/>
+            <path d="M 200 265 L 270 283" stroke="url(#f-amber)"/>
+            <path d="M 490 103 L 620 103" stroke="url(#f-blue)"/>
+            <path d="M 490 163 L 620 163" stroke="url(#f-teal)"/>
+            <path d="M 490 223 L 620 223" stroke="url(#f-violet)"/>
+            <path d="M 490 283 L 620 283" stroke="url(#f-amber)"/>
+          </g>
+
+          <!-- Tenant column -->
+          <g font-family="Space Grotesk" font-size="12">
+            <text x="640" y="60" fill="#00C2FF" font-family="JetBrains Mono" font-size="10" letter-spacing="1.4">TENANT</text>
+
+            <rect x="620" y="80" width="300" height="46" rx="8" fill="rgba(0,194,255,0.08)" stroke="#00C2FF"/>
+            <text x="635" y="102" fill="#E4E7EC" font-weight="500">Marina Cafe WiFi</text>
+            <text x="635" y="118" fill="#8A93A6" font-family="JetBrains Mono" font-size="10">plan: Guest 2h · AED 5 · voucher</text>
+            <circle cx="905" cy="103" r="4" fill="#00C2FF"/>
+
+            <rect x="620" y="140" width="300" height="46" rx="8" fill="rgba(34,211,180,0.08)" stroke="#22D3B4"/>
+            <text x="635" y="162" fill="#E4E7EC" font-weight="500">Corniche Hotel</text>
+            <text x="635" y="178" fill="#8A93A6" font-family="JetBrains Mono" font-size="10">plan: Guest 24h · room-billed</text>
+            <circle cx="905" cy="163" r="4" fill="#22D3B4"/>
+
+            <rect x="620" y="200" width="300" height="46" rx="8" fill="rgba(124,92,255,0.08)" stroke="#7C5CFF"/>
+            <text x="635" y="222" fill="#E4E7EC" font-weight="500">Dune Fibre</text>
+            <text x="635" y="238" fill="#8A93A6" font-family="JetBrains Mono" font-size="10">plan: Home 100 · PPPoE · monthly</text>
+            <circle cx="905" cy="223" r="4" fill="#7C5CFF"/>
+
+            <rect x="620" y="260" width="300" height="46" rx="8" fill="rgba(255,181,71,0.08)" stroke="#FFB547"/>
+            <text x="635" y="282" fill="#E4E7EC" font-weight="500">Guest Event WiFi</text>
+            <text x="635" y="298" fill="#8A93A6" font-family="JetBrains Mono" font-size="10">plan: 4hr pass · one-off</text>
+            <circle cx="905" cy="283" r="4" fill="#FFB547"/>
+          </g>
+
+          <!-- Packet flows -->
+          <circle r="3" fill="#00C2FF"><animateMotion dur="2.5s" repeatCount="indefinite" path="M 200 220 L 270 103 L 490 103 L 620 103"/></circle>
+          <circle r="3" fill="#22D3B4"><animateMotion dur="2.5s" repeatCount="indefinite" begin="0.6s" path="M 200 235 L 270 163 L 490 163 L 620 163"/></circle>
+          <circle r="3" fill="#7C5CFF"><animateMotion dur="2.5s" repeatCount="indefinite" begin="1.2s" path="M 200 250 L 270 223 L 490 223 L 620 223"/></circle>
+          <circle r="3" fill="#FFB547"><animateMotion dur="2.5s" repeatCount="indefinite" begin="1.8s" path="M 200 265 L 270 283 L 490 283 L 620 283"/></circle>
+
+          <!-- Caption -->
+          <text x="500" y="440" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#8A93A6">FreeRADIUS policy · unlang · matches Called-Station-Id → sets Tmp-String-1 tenant_id</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why -->
+<section>
+  <div class="wrap">
+    <div class="section-header">
+      <span class="eyebrow">Why it matters</span>
+      <h2>A gap the incumbents don't fill.</h2>
+      <p>Traditional ISP platforms assume "one ISP, possibly multi-site." Trafyx WaaS assumes "one MSP, many independent ISP tenants sharing radio infrastructure." That's a real gap in the market, and it's where you'd land.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M5.5 8.5L12 5l6.5 3.5M5.5 15.5L12 19l6.5-3.5"/></svg></div>
+        <h3>Tenant isolation</h3>
+        <p>Row-level security in Postgres, plus per-tenant Supabase policies. A subscriber under Dune Fibre never sees Marina Cafe's data.</p>
+      </div>
+      <a href="portal.html" class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg></div>
+        <h3>Per-tenant white-label portal</h3>
+        <p>Each ISP tenant gets a branded subscriber portal at <span class="mono">/portal/{slug}</span>. Logo, colours, plan visibility all per tenant.</p>
+      </a>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg></div>
+        <h3>MSP super-admin</h3>
+        <p>You see all tenants at once. Bill them per subscriber, per SSID, or per active session. Onboard a new ISP in minutes.</p>
+      </div>
+      <a href="vouchers.html" class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg></div>
+        <h3>Voucher SMS delivery</h3>
+        <p>For hospitality and event tenants — vouchers sent to guest phones on room check-in, ticket scan, or manual dispatch.</p>
+      </a>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></div>
+        <h3>Fallback tenant</h3>
+        <p>If a Called-Station-Id doesn't match any known SSID, RADIUS routes to a configurable default tenant. No silent auth failures.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg></div>
+        <h3>Vendor-neutral SSID format</h3>
+        <p>Ships parsing for Ruckus SmartZone. Plug-in patterns for Aruba, Ubiquiti, and Cisco Meraki are configurable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Onboarding steps -->
+<section style="background: var(--bg-alt);">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="eyebrow">Onboard a tenant</span>
+      <h2>New ISP live in under 15 minutes.</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="step-num">01</div><div><h4>Create the tenant</h4><p>Name, slug, brand color, logo, contact. Trafyx provisions a Postgres schema record and portal route.</p></div></div>
+      <div class="step"><div class="step-num">02</div><div><h4>Map their SSIDs</h4><p>Add every AP MAC + SSID combo that belongs to this tenant. Multiple APs, multiple SSIDs — all fine.</p></div></div>
+      <div class="step"><div class="step-num">03</div><div><h4>Configure their plans</h4><p>Hotspot, PPPoE, prepaid — whatever this tenant sells. Optional: attach a reseller price book.</p></div></div>
+      <div class="step"><div class="step-num">04</div><div><h4>Reload the RADIUS policy</h4><p>One <span class="mono">systemctl reload freeradius-provix</span> and the new SSIDs are routing.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="wrap">
+    <div class="cta-block">
+      <span class="eyebrow" style="justify-content:center;">MSPs, this one's for you</span>
+      <h2 class="mt-1">Serve every ISP on one platform.</h2>
+      <p>The current build has been dogfooded on a live Ruckus SmartZone deployment. Ask for the reference call.</p>
+      <div class="cta-buttons">
+        <a href="../index.html#cta" class="btn btn-primary">Book demo</a>
+        <a href="../index.html" class="btn btn-ghost">Back to overview</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div data-footer=".."></div>
+
+<script src="../app.js"></script>
+<script src="../footer.js"></script>
+</body>
+</html>

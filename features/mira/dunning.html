@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mira · Dunning — Trafyx</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-inner">
+  <a href="../../index.html" class="nav-logo"><div class="nav-logo-mark">Tx</div><span>Trafyx</span></a>
+  <div class="nav-links"><a href="../../index.html">Home</a><a href="../../features/index.html">Features</a><a href="../mira.html" class="active">Mira AI</a><a href="../waas.html">WaaS</a><a href="../billing.html">Billing</a><a href="../radius.html">RADIUS</a><a href="../portal.html">Portal</a><a href="../noc.html">NOC</a><a href="../../contact.html">Contact</a></div>
+  <div class="nav-cta"><button class="theme-toggle" aria-label="Toggle theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><a href="../../index.html#cta" class="btn btn-primary">Book demo</a><button class="nav-menu-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div>
+</div></nav>
+
+<section class="hero">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="wrap hero-inner">
+    <div style="max-width: 900px;">
+      <a href="../mira.html" style="color: var(--brand); text-decoration: none; font-size: 0.88rem; font-family: var(--font-mono);">← Mira AI</a>
+      <span class="eyebrow" style="margin-top: 12px;">Front #2 · Dunning Decisions</span>
+      <h1 class="mt-1">Overdue accounts, <span class="gradient-text">handled with judgment.</span></h1>
+      <p class="lead mt-2">Not everyone who's late is a delinquent. Mira reads the full payment history, spots reliable payers who've slipped once, and picks the response that keeps the customer without letting the balance grow. Preview mode always available.</p>
+    </div>
+
+    <!-- Preview vs execute panel -->
+    <div class="mockup mt-4" style="max-width: 1100px; margin: 32px auto 0;">
+      <div class="mockup-bar">
+        <div class="mockup-dots"><span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span></div>
+        <div class="mockup-url">POST /api/mira/dunning · preview</div>
+        <span class="badge badge-warn">Read-only</span>
+      </div>
+      <div class="mockup-body" style="padding: 0;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+          <thead>
+            <tr style="text-align: left; color: var(--text-mute); font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em;">
+              <th style="padding: 14px 20px; font-weight: 500;">SUBSCRIBER</th>
+              <th style="padding: 14px 20px; font-weight: 500; text-align: right;">OVERDUE</th>
+              <th style="padding: 14px 20px; font-weight: 500;">DAYS</th>
+              <th style="padding: 14px 20px; font-weight: 500;">MIRA'S CALL</th>
+              <th style="padding: 14px 20px; font-weight: 500; text-align: right;">CONF.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-top: 1px solid var(--border);">
+              <td style="padding: 14px 20px;"><div>Fatima Al Zaabi</div><div class="mono text-mute" style="font-size: 0.72rem; margin-top: 2px;">PRX-001004</div></td>
+              <td class="mono" style="padding: 14px 20px; text-align: right;">AED 199</td>
+              <td class="mono" style="padding: 14px 20px;">4d</td>
+              <td style="padding: 14px 20px;"><span class="badge" style="background:rgba(0,194,255,0.1); color: var(--brand); border-color: rgba(0,194,255,0.3);">gentle_reminder</span><div class="text-mute" style="font-size: 0.72rem; margin-top: 4px;">First slip in 18 months</div></td>
+              <td class="mono" style="padding: 14px 20px; text-align: right; color: var(--success);">94%</td>
+            </tr>
+            <tr style="border-top: 1px solid var(--border);">
+              <td style="padding: 14px 20px;"><div>Yousef Ibrahim</div><div class="mono text-mute" style="font-size: 0.72rem; margin-top: 2px;">PRX-001000</div></td>
+              <td class="mono" style="padding: 14px 20px; text-align: right;">AED 627.90</td>
+              <td class="mono" style="padding: 14px 20px;">65d</td>
+              <td style="padding: 14px 20px;"><span class="badge badge-warn">final_warning</span><div class="text-mute" style="font-size: 0.72rem; margin-top: 4px;">Already suspended · don't re-suspend</div></td>
+              <td class="mono" style="padding: 14px 20px; text-align: right; color: var(--success);">92%</td>
+            </tr>
+            <tr style="border-top: 1px solid var(--border); background: rgba(255,181,71,0.04);">
+              <td style="padding: 14px 20px;"><div>Layla Hassan</div><div class="mono text-mute" style="font-size: 0.72rem; margin-top: 2px;">PRX-001001</div></td>
+              <td class="mono" style="padding: 14px 20px; text-align: right;">AED 299</td>
+              <td class="mono" style="padding: 14px 20px;">31d</td>
+              <td style="padding: 14px 20px;"><span class="badge badge-warn">flag_for_review</span><div class="text-mute" style="font-size: 0.72rem; margin-top: 4px;">Payment PMT-9012 matches invoice — reconciliation gap</div></td>
+              <td class="mono" style="padding: 14px 20px; text-align: right; color: var(--warning);">78%</td>
+            </tr>
+            <tr style="border-top: 1px solid var(--border);">
+              <td style="padding: 14px 20px;"><div>Khalid Rashid</div><div class="mono text-mute" style="font-size: 0.72rem; margin-top: 2px;">PRX-001007</div></td>
+              <td class="mono" style="padding: 14px 20px; text-align: right;">AED 2,397</td>
+              <td class="mono" style="padding: 14px 20px;">72d</td>
+              <td style="padding: 14px 20px;"><span class="badge badge-danger">suspend</span><div class="text-mute" style="font-size: 0.72rem; margin-top: 4px;">Business account · 3 unpaid cycles · no payments in 90d</div></td>
+              <td class="mono" style="padding: 14px 20px; text-align: right; color: var(--success);">96%</td>
+            </tr>
+            <tr style="border-top: 1px solid var(--border);">
+              <td style="padding: 14px 20px;"><div>Noora Ali</div><div class="mono text-mute" style="font-size: 0.72rem; margin-top: 2px;">PRX-001003</div></td>
+              <td class="mono" style="padding: 14px 20px; text-align: right;">AED 89</td>
+              <td class="mono" style="padding: 14px 20px;">12d</td>
+              <td style="padding: 14px 20px;"><span class="badge">grace</span><div class="text-mute" style="font-size: 0.72rem; margin-top: 4px;">Under AED 100 threshold · no action</div></td>
+              <td class="mono" style="padding: 14px 20px; text-align: right; color: var(--success);">98%</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="padding: 20px; border-top: 1px solid var(--border); display:flex; justify-content:space-between; align-items:center;">
+          <div class="mono text-mute" style="font-size: 0.75rem;">5 overdue subscribers analysed · 1 flagged for review · 1 suspension recommended</div>
+          <div style="display:flex; gap: 10px;">
+            <button class="btn btn-ghost">Cancel</button>
+            <button class="btn btn-primary">Execute all</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Guardrails -->
+<section>
+  <div class="wrap">
+    <div class="section-header">
+      <span class="eyebrow">The guardrails</span>
+      <h2>Suspending someone is a big deal.<br>Mira treats it that way.</h2>
+    </div>
+    <div class="grid-2">
+      <div class="card"><h3 style="font-size: 1.05rem;">Never re-suspend</h3><p>If a subscriber is already suspended, Mira never re-issues the block. Prevents duplicate CoA storms and status thrash.</p></div>
+      <div class="card"><h3 style="font-size: 1.05rem;">Small balance grace</h3><p>Under AED 100 balance and under 60 days? Automatic grace period. No suspend regardless of confidence.</p></div>
+      <div class="card"><h3 style="font-size: 1.05rem;">90% suspension threshold</h3><p>Suspensions only fire above 90% confidence. Anything below drops to final_warning with staff notification.</p></div>
+      <div class="card"><h3 style="font-size: 1.05rem;">Reconciliation catcher</h3><p>If a payment matches an "overdue" invoice by amount and date, Mira flags it as a reconciliation gap — no action, human review.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Story -->
+<section style="background: var(--bg-alt);">
+  <div class="wrap">
+    <div class="cta-block" style="text-align: left; padding: 36px;">
+      <span class="eyebrow">The reconciliation catch</span>
+      <h2 style="margin-top: 16px;">In preview, on day one.</h2>
+      <p style="margin-top: 20px;">The first time Mira ran dunning in preview mode against production data, she flagged PRX-001001 for review instead of suspending. Reason: <span class="mono" style="color: var(--brand);">"Payment PMT-9012 amount and date match invoice INV-001001. Likely reconciliation issue, not delinquency."</span> A human checked. Mira was right. That subscriber almost got cut off for a bill they'd already paid.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cta"><div class="wrap"><div class="cta-block">
+  <span class="eyebrow" style="justify-content:center;">Collections, calmer</span>
+  <h2 class="mt-1">Fewer cut-offs. Fewer angry calls.<br>Less silent AR loss.</h2>
+  <div class="cta-buttons"><a href="../../index.html#cta" class="btn btn-primary">Book demo</a><a href="../mira.html" class="btn btn-ghost">Back to Mira</a></div>
+</div></div></section>
+
+<div data-footer="../.."></div>
+<script src="../../app.js"></script>
+<script src="../../footer.js"></script>
+</body>
+</html>

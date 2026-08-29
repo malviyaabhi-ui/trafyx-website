@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mira · Ticket Triage — Trafyx</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-inner">
+  <a href="../../index.html" class="nav-logo"><div class="nav-logo-mark">Tx</div><span>Trafyx</span></a>
+  <div class="nav-links"><a href="../../index.html">Home</a><a href="../../features/index.html">Features</a><a href="../mira.html" class="active">Mira AI</a><a href="../waas.html">WaaS</a><a href="../billing.html">Billing</a><a href="../radius.html">RADIUS</a><a href="../portal.html">Portal</a><a href="../noc.html">NOC</a><a href="../../contact.html">Contact</a></div>
+  <div class="nav-cta"><button class="theme-toggle" aria-label="Toggle theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><a href="../../index.html#cta" class="btn btn-primary">Book demo</a><button class="nav-menu-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div>
+</div></nav>
+
+<section class="hero">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="wrap hero-inner">
+    <div style="max-width: 900px;">
+      <a href="../mira.html" style="color: var(--brand); text-decoration: none; font-size: 0.88rem; font-family: var(--font-mono);">← Mira AI</a>
+      <span class="eyebrow" style="margin-top: 12px;">Front #1 · Ticket Triage</span>
+      <h1 class="mt-1">Every ticket, <span class="gradient-text">read and acted on</span> before your team sees it.</h1>
+      <p class="lead mt-2">The moment a subscriber or the portal opens a ticket, Mira pulls the full context — invoices, RADIUS state, payment history, last five interactions — decides what to do, and either acts or hands off with reasoning attached.</p>
+    </div>
+
+    <!-- Flow diagram -->
+    <div class="mockup mt-4" style="max-width: 1100px; margin: 32px auto 0;">
+      <div class="mockup-bar">
+        <div class="mockup-dots"><span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span></div>
+        <div class="mockup-url">flow · ticket → triage → action</div>
+        <span class="badge badge-brand badge-dot">live</span>
+      </div>
+      <div class="mockup-body" style="padding: 40px 20px;">
+        <svg viewBox="0 0 1000 320" style="width: 100%; height: auto;">
+          <defs>
+            <marker id="arrow-b" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#00C2FF"/></marker>
+            <marker id="arrow-a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7C5CFF"/></marker>
+          </defs>
+          <!-- Step 1: Ticket in -->
+          <g>
+            <rect x="20" y="120" width="140" height="80" rx="12" fill="#0F1730" stroke="#00C2FF" stroke-width="1.5"/>
+            <text x="90" y="150" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#00C2FF" letter-spacing="1.4">STEP 1</text>
+            <text x="90" y="172" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="#E4E7EC">Ticket in</text>
+            <text x="90" y="188" text-anchor="middle" font-family="Inter" font-size="10" fill="#8A93A6">from portal or email</text>
+          </g>
+          <!-- Flowing arrow -->
+          <path d="M 160 160 L 240 160" stroke="#00C2FF" stroke-width="2" fill="none" marker-end="url(#arrow-b)" class="flow-line"/>
+          <!-- Step 2: Context pull -->
+          <g>
+            <rect x="240" y="80" width="200" height="160" rx="12" fill="#0F1730" stroke="#00C2FF" stroke-width="1.5"/>
+            <text x="340" y="105" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#00C2FF" letter-spacing="1.4">STEP 2</text>
+            <text x="340" y="126" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="#E4E7EC">Context snapshot</text>
+            <text x="260" y="150" font-family="JetBrains Mono" font-size="10" fill="#8A93A6">↦ subscriber record</text>
+            <text x="260" y="168" font-family="JetBrains Mono" font-size="10" fill="#8A93A6">↦ RADIUS radcheck + acct</text>
+            <text x="260" y="186" font-family="JetBrains Mono" font-size="10" fill="#8A93A6">↦ invoices last 6</text>
+            <text x="260" y="204" font-family="JetBrains Mono" font-size="10" fill="#8A93A6">↦ payments last 5</text>
+            <text x="260" y="222" font-family="JetBrains Mono" font-size="10" fill="#8A93A6">↦ prior tickets</text>
+          </g>
+          <path d="M 440 160 L 520 160" stroke="#00C2FF" stroke-width="2" fill="none" marker-end="url(#arrow-b)" class="flow-line"/>
+          <!-- Step 3: Mira decides -->
+          <g>
+            <rect x="520" y="80" width="200" height="160" rx="12" fill="#0F1730" stroke="#7C5CFF" stroke-width="1.5"/>
+            <text x="620" y="105" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#7C5CFF" letter-spacing="1.4">STEP 3</text>
+            <text x="620" y="126" text-anchor="middle" font-family="Space Grotesk" font-size="14" fill="#E4E7EC">Mira decides</text>
+            <text x="620" y="150" text-anchor="middle" font-family="Inter" font-size="10" fill="#8A93A6">reads the full case</text>
+            <text x="620" y="172" text-anchor="middle" font-family="Inter" font-size="10" fill="#8A93A6">picks one action</text>
+            <text x="620" y="194" text-anchor="middle" font-family="Inter" font-size="10" fill="#8A93A6">rates her confidence</text>
+            <text x="620" y="216" text-anchor="middle" font-family="Inter" font-size="10" fill="#8A93A6">drafts a reply</text>
+          </g>
+          <!-- Split branches -->
+          <path d="M 720 130 L 800 60 L 850 60" stroke="#22D3B4" stroke-width="2" fill="none" marker-end="url(#arrow-b)"/>
+          <path d="M 720 160 L 800 160 L 850 160" stroke="#FFB547" stroke-width="2" fill="none" marker-end="url(#arrow-b)"/>
+          <path d="M 720 190 L 800 260 L 850 260" stroke="#FF5470" stroke-width="2" fill="none" marker-end="url(#arrow-b)"/>
+          <!-- Outcomes -->
+          <g><rect x="850" y="30" width="130" height="60" rx="10" fill="rgba(34,211,180,0.08)" stroke="#22D3B4" stroke-width="1"/><text x="915" y="55" text-anchor="middle" font-family="Space Grotesk" font-size="12" fill="#22D3B4">≥ 90% conf.</text><text x="915" y="72" text-anchor="middle" font-family="Inter" font-size="10" fill="#8A93A6">Act &amp; reply</text></g>
+          <g><rect x="850" y="130" width="130" height="60" rx="10" fill="rgba(255,181,71,0.08)" stroke="#FFB547" stroke-width="1"/><text x="915" y="155" text-anchor="middle" font-family="Space Grotesk" font-size="12" fill="#FFB547">Info missing</text><text x="915" y="172" text-anchor="middle" font-family="Inter" font-size="10" fill="#8A93A6">Ask subscriber</text></g>
+          <g><rect x="850" y="230" width="130" height="60" rx="10" fill="rgba(255,84,112,0.08)" stroke="#FF5470" stroke-width="1"/><text x="915" y="255" text-anchor="middle" font-family="Space Grotesk" font-size="12" fill="#FF5470">Uncertain</text><text x="915" y="272" text-anchor="middle" font-family="Inter" font-size="10" fill="#8A93A6">Escalate to human</text></g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sample tickets -->
+<section>
+  <div class="wrap">
+    <div class="section-header">
+      <span class="eyebrow">In production</span>
+      <h2>Three real tickets from last week.</h2>
+      <p>Anonymised. All three came in within 4 minutes of each other. Mira handled the first two without a human touching them, and correctly escalated the third.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;">
+          <span class="badge badge-success">✓ Auto-resolved</span>
+          <span class="mono text-mute" style="font-size: 0.72rem;">TKT-2842</span>
+        </div>
+        <h4 style="margin-bottom: 8px; font-size: 1rem;">"Please unblock — paid last night"</h4>
+        <p style="font-size: 0.85rem;">Mira found matching payment PMT-8834 (Telr, ref matches), removed the Auth-Type block, issued CoA disconnect to bounce the session.</p>
+        <div class="mono mt-2" style="font-size: 0.72rem; color: var(--success);">96% · 2m 04s · unblock_radius</div>
+      </div>
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;">
+          <span class="badge badge-warn">? Info requested</span>
+          <span class="mono text-mute" style="font-size: 0.72rem;">TKT-2844</span>
+        </div>
+        <h4 style="margin-bottom: 8px; font-size: 1rem;">"Speed slow"</h4>
+        <p style="font-size: 0.85rem;">No specifics. Mira replied asking which device, wired vs wireless, and requested a Cloudflare speedtest link. Reply came back in 8 minutes — issue was wifi range, not the plan.</p>
+        <div class="mono mt-2" style="font-size: 0.72rem; color: var(--warning);">74% · request_info</div>
+      </div>
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;">
+          <span class="badge badge-danger">↑ Escalated</span>
+          <span class="mono text-mute" style="font-size: 0.72rem;">TKT-2843</span>
+        </div>
+        <h4 style="margin-bottom: 8px; font-size: 1rem;">"Down for 2 hours, want a discount"</h4>
+        <p style="font-size: 0.85rem;">Mira flagged the outage in radacct (matches NAS silence 12:04–14:11), summarised the case for the agent, and marked the subscriber as eligible for a pro-rata credit. Human made the call.</p>
+        <div class="mono mt-2" style="font-size: 0.72rem; color: var(--danger);">45% · escalate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Whitelisted actions -->
+<section style="background: var(--bg-alt);">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="eyebrow">Safety by design</span>
+      <h2>Mira picks one action. Server code executes it.</h2>
+      <p>She never writes SQL. She never calls tools freely. She returns a JSON action from a whitelisted enum. Your server runs a switch statement.</p>
+    </div>
+
+    <div class="term" style="max-width: 720px; margin: 0 auto;">
+      <div class="term-line"><span class="term-info">enum</span> TicketAction {</div>
+      <div class="term-line">  <span class="term-ok">unblock_radius</span>       <span class="term-time">// remove radcheck.Auth-Type=Reject + CoA</span></div>
+      <div class="term-line">  <span class="term-ok">block_radius</span>         <span class="term-time">// insert radcheck.Auth-Type=Reject</span></div>
+      <div class="term-line">  <span class="term-ok">reactivate_subscriber</span> <span class="term-time">// status: active, clear suspension</span></div>
+      <div class="term-line">  <span class="term-ok">suspend_subscriber</span>    <span class="term-time">// status: suspended</span></div>
+      <div class="term-line">  <span class="term-ok">reset_password</span>        <span class="term-time">// generate + SMS new password</span></div>
+      <div class="term-line">  <span class="term-warn">escalate</span>              <span class="term-time">// assign to human queue + summary</span></div>
+      <div class="term-line">  <span class="term-warn">request_info</span>          <span class="term-time">// draft reply asking specific question</span></div>
+      <div class="term-line">  <span class="term-time">no_action                </span> <span class="term-time">// note-only, no side effect</span></div>
+      <div class="term-line">}</div>
+    </div>
+  </div>
+</section>
+
+<!-- Related -->
+<section>
+  <div class="wrap">
+    <div class="section-header">
+      <span class="eyebrow">More Mira fronts</span>
+      <h2>See how she works elsewhere.</h2>
+    </div>
+    <div class="grid-3">
+      <a href="dunning.html" class="card card-link"><h3 style="font-size: 1rem;">Dunning decisions →</h3><p style="font-size: 0.85rem;">Overdue subscribers, same confidence model, different action set.</p></a>
+      <a href="noc-watch.html" class="card card-link"><h3 style="font-size: 1rem;">NOC watch →</h3><p style="font-size: 0.85rem;">The other end of the ticket pipeline — Mira opens them, too.</p></a>
+      <a href="intelligence.html" class="card card-link"><h3 style="font-size: 1rem;">Intelligence analyst →</h3><p style="font-size: 0.85rem;">Same snapshot pattern, applied to whole-business questions.</p></a>
+    </div>
+  </div>
+</section>
+
+<section id="cta"><div class="wrap"><div class="cta-block">
+  <span class="eyebrow" style="justify-content:center;">Ticket volume, quieter</span>
+  <h2 class="mt-1">Let Mira read every ticket first.</h2>
+  <div class="cta-buttons"><a href="../../index.html#cta" class="btn btn-primary">Book demo</a><a href="../mira.html" class="btn btn-ghost">Back to Mira</a></div>
+</div></div></section>
+
+<div data-footer="../.."></div>
+<script src="../../app.js"></script>
+<script src="../../footer.js"></script>
+</body>
+</html>
