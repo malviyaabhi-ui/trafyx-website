@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Price Books — Trafyx</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-inner">
+  <a href="../index.html" class="nav-logo"><div class="nav-logo-mark">Tx</div><span>Trafyx</span></a>
+  <div class="nav-links"><a href="../index.html">Home</a><a href="../features/index.html">Features</a><a href="mira.html">Mira AI</a><a href="waas.html">WaaS</a><a href="billing.html">Billing</a><a href="radius.html">RADIUS</a><a href="portal.html">Portal</a><a href="noc.html">NOC</a><a href="../contact.html">Contact</a></div>
+  <div class="nav-cta"><button class="theme-toggle" aria-label="Toggle theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><a href="../index.html#cta" class="btn btn-primary">Book demo</a><button class="nav-menu-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div>
+</div></nav>
+
+<section class="hero">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="wrap hero-inner">
+    <div style="max-width: 900px;">
+      <span class="eyebrow">Price Books</span>
+      <h1 class="mt-1">Different partners.<br><span class="gradient-text">Different pricing.</span></h1>
+      <p class="lead mt-2">Named price books per reseller — Gold, Silver, Retail, custom. Override prices, hide plans, expose promotional rates. Enforced at invoice write and in the subscriber portal.</p>
+    </div>
+
+    <!-- Price book table -->
+    <div class="mockup mt-4" style="max-width: 1100px; margin: 32px auto 0;">
+      <div class="mockup-bar">
+        <div class="mockup-dots"><span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span></div>
+        <div class="mockup-url">trafyx.ai / finance / pricebooks / tez-reseller</div>
+      </div>
+      <div class="mockup-body">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px;">
+          <div>
+            <h3 style="margin-bottom: 4px;">Tez Reseller Rates</h3>
+            <div class="mono text-mute" style="font-size: 0.8rem;">Assigned to · Tez Distribution LLC</div>
+          </div>
+          <div style="display:flex; gap: 8px;">
+            <span class="badge badge-success">Active</span>
+            <span class="badge">18 plans</span>
+          </div>
+        </div>
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem;">
+          <thead>
+            <tr style="text-align: left; color: var(--text-mute); font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em;">
+              <th style="padding: 12px 16px; font-weight: 500;">PLAN</th>
+              <th style="padding: 12px 16px; font-weight: 500; text-align: right;">LIST</th>
+              <th style="padding: 12px 16px; font-weight: 500; text-align: right;">OVERRIDE</th>
+              <th style="padding: 12px 16px; font-weight: 500; text-align: right;">MARGIN</th>
+              <th style="padding: 12px 16px; font-weight: 500;">VISIBLE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-top: 1px solid var(--border);"><td style="padding: 14px 16px;">Home Fibre 100</td><td class="mono text-mute" style="padding: 14px 16px; text-align: right;">AED 199</td><td class="mono" style="padding: 14px 16px; text-align: right; color: var(--brand);">AED 149</td><td style="padding: 14px 16px; text-align: right; color: var(--success);">25%</td><td style="padding: 14px 16px;"><span class="pb-toggle pb-on" data-anim-toggle data-plan="Home Fibre 100"><span class="pb-thumb"></span></span></td></tr>
+            <tr style="border-top: 1px solid var(--border);"><td style="padding: 14px 16px;">Home Fibre 250</td><td class="mono text-mute" style="padding: 14px 16px; text-align: right;">AED 299</td><td class="mono" style="padding: 14px 16px; text-align: right; color: var(--brand);">AED 249</td><td style="padding: 14px 16px; text-align: right; color: var(--success);">17%</td><td style="padding: 14px 16px;"><span class="pb-toggle pb-on" data-anim-toggle data-plan="Home Fibre 250"><span class="pb-thumb"></span></span></td></tr>
+            <tr style="border-top: 1px solid var(--border); opacity: 0.55;"><td style="padding: 14px 16px;">Business 500</td><td class="mono text-mute" style="padding: 14px 16px; text-align: right;">AED 799</td><td class="mono text-mute" style="padding: 14px 16px; text-align: right;">—</td><td class="text-mute" style="padding: 14px 16px; text-align: right;">—</td><td style="padding: 14px 16px;"><span class="pb-toggle" data-plan="Business 500"><span class="pb-thumb"></span></span></td></tr>
+            <tr style="border-top: 1px solid var(--border);"><td style="padding: 14px 16px;">Hotspot Day Pass</td><td class="mono text-mute" style="padding: 14px 16px; text-align: right;">AED 20</td><td class="mono" style="padding: 14px 16px; text-align: right; color: var(--brand);">AED 15</td><td style="padding: 14px 16px; text-align: right; color: var(--success);">25%</td><td style="padding: 14px 16px;"><span class="pb-toggle pb-on" data-anim-toggle data-plan="Hotspot Day Pass"><span class="pb-thumb"></span></span></td></tr>
+          </tbody>
+        </table>
+        <div style="margin-top: 20px; padding: 14px 16px; background: rgba(255,181,71,0.06); border-left: 3px solid var(--warning); border-radius: 6px; font-size: 0.85rem; color: var(--text-dim); transition: opacity 0.3s ease;" data-hidden-plan-note>
+          <strong style="color: var(--warning);">Note:</strong> <span data-hidden-plan-name>Business 500</span> is hidden — Tez Distribution's subscribers won't see this plan in the portal, and it can't be assigned to them.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-header">
+      <span class="eyebrow">Enforced everywhere</span>
+      <h2>Not just a spreadsheet.</h2>
+      <p>The price book is applied wherever a plan meets a subscriber.</p>
+    </div>
+    <div class="grid-3">
+      <a href="billing.html" class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div><h3>Invoice generation</h3><p>The override price is what gets billed. Postpaid or prepaid. Cycle after cycle.</p></a>
+      <a href="portal.html" class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/></svg></div><h3>Subscriber portal</h3><p>Plan lists filtered by visibility. Prices shown are the customer's actual prices — no bait-and-switch.</p></a>
+      <a href="resellers.html" class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3>Reseller signup</h3><p>Whatever plans are visible in the reseller's price book are the plans they can activate. Nothing else.</p></a>
+      <a href="pricebooks.html" class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><h3>Named books</h3><p>Gold, Silver, Retail, or your own naming. Duplicate to iterate. Archive when retired.</p></a>
+      <a href="billing.html" class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/></svg></div><h3>Effective dating</h3><p>Change a price effective Sep 1. Existing subscribers keep their old rate until their next cycle unless you override.</p></a>
+      <a href="resellers.html" class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4zM8 4v16M16 4v16"/></svg></div><h3>Assign at scale</h3><p>Move a whole reseller's book in one operation. Preview the invoice delta before commit.</p></a>
+    </div>
+  </div>
+</section>
+
+<section id="cta"><div class="wrap"><div class="cta-block">
+  <span class="eyebrow" style="justify-content:center;">Channel pricing, done right</span>
+  <h2 class="mt-1">Every partner. Their rates. Your control.</h2>
+  <div class="cta-buttons"><a href="../index.html#cta" class="btn btn-primary">Book demo</a><a href="resellers.html" class="btn btn-ghost">See Resellers</a></div>
+</div></div></section>
+
+<div data-footer=".."></div>
+<script src="../app.js"></script>
+<script src="../footer.js"></script>
+</body>
+</html>

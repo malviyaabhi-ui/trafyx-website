@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentation — Trafyx</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-inner">
+  <a href="index.html" class="nav-logo"><div class="nav-logo-mark">Tx</div><span>Trafyx</span></a>
+  <div class="nav-links"><a href="./index.html">Home</a><a href="features/index.html">Features</a><a href="features/mira.html">Mira AI</a><a href="integrations.html">Integrations</a><a href="security.html">Security</a><a href="changelog.html">Changelog</a><a href="docs.html" class="active">Docs</a><a href="./contact.html">Contact</a></div>
+  <div class="nav-cta"><button class="theme-toggle" aria-label="Toggle theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><a href="index.html#cta" class="btn btn-primary">Book demo</a><button class="nav-menu-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div>
+</div></nav>
+
+<section class="hero">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="wrap hero-inner">
+    <div style="max-width: 900px;">
+      <span class="eyebrow">Documentation</span>
+      <h1 class="mt-1">Everything you need<br><span class="gradient-text">to run Trafyx.</span></h1>
+      <p class="lead mt-2">Getting-started guides, API reference, deployment runbooks, and troubleshooting. All open. Bring your team.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Sections -->
+<section>
+  <div class="wrap">
+    <div class="grid-3">
+      <a href="#getting-started" class="card card-link">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>Getting started</h3>
+        <p>From zero to first invoice in 30 minutes. Signup, tenant setup, first NAS, first subscriber, first bill.</p>
+      </a>
+      <a href="#api" class="card card-link" id="api">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h3>API reference</h3>
+        <p>REST endpoints for every module. Auth via service role or scoped JWT. OpenAPI spec available.</p>
+      </a>
+      <a href="#radius" class="card card-link">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l3-9 4 18 3-9h4"/></svg></div>
+        <h3>RADIUS setup</h3>
+        <p>Pointing MikroTik, Ruckus, Cisco, Aruba at our managed FreeRADIUS. Shared secrets, ports, CoA.</p>
+      </a>
+      <a href="#mira" class="card card-link">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Mira guide</h3>
+        <p>Configuring the six Mira fronts, tuning thresholds, preview mode, action whitelisting, audit review.</p>
+      </a>
+      <a href="#waas" class="card card-link">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>WaaS onboarding</h3>
+        <p>For MSPs: onboarding an ISP tenant, SSID mapping, per-tenant branding, MSP billing.</p>
+      </a>
+      <a href="#billing" class="card card-link">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div>
+        <h3>Billing playbook</h3>
+        <p>Cycles, invoice runs, dunning, price books, resellers, Zoho sync, VAT setup.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Coming soon -->
+<section style="background: var(--bg-alt);">
+  <div class="wrap">
+    <div class="cta-block" style="text-align: left; padding: 36px;">
+      <span class="eyebrow">Full portal coming Q4</span>
+      <h2 style="margin-top: 16px;">Searchable docs, video walkthroughs,<br>and interactive API explorer.</h2>
+      <p style="margin-top: 20px;">In the meantime, book a demo and we'll walk you through anything you need. Or email <a href="mailto:docs@trafyx.ai" style="color: var(--brand);">docs@trafyx.ai</a> with specific questions — most get answered same-day.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cta"><div class="wrap"><div class="cta-block">
+  <span class="eyebrow" style="justify-content:center;">Need help now?</span>
+  <h2 class="mt-1">We answer email fast.</h2>
+  <div class="cta-buttons"><a href="mailto:docs@trafyx.ai" class="btn btn-primary">Email docs team</a><a href="index.html#cta" class="btn btn-ghost">Book onboarding call</a></div>
+</div></div></section>
+
+<div data-footer="."></div>
+<script src="app.js"></script>
+<script src="footer.js"></script>
+</body>
+</html>

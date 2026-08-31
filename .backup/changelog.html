@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Changelog — Trafyx</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-inner">
+  <a href="index.html" class="nav-logo"><div class="nav-logo-mark">Tx</div><span>Trafyx</span></a>
+  <div class="nav-links"><a href="./index.html">Home</a><a href="features/index.html">Features</a><a href="features/mira.html">Mira AI</a><a href="about.html">About</a><a href="security.html">Security</a><a href="changelog.html" class="active">Changelog</a><a href="docs.html">Docs</a><a href="./contact.html">Contact</a></div>
+  <div class="nav-cta"><button class="theme-toggle" aria-label="Toggle theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><a href="index.html#cta" class="btn btn-primary">Book demo</a><button class="nav-menu-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div>
+</div></nav>
+
+<section class="hero">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="wrap hero-inner">
+    <div style="max-width: 900px;">
+      <span class="eyebrow">Changelog</span>
+      <h1 class="mt-1">Every version.<br><span class="gradient-text">Since April 2025.</span></h1>
+      <p class="lead mt-2">Trafyx ships weekly. Big things and small. Here's the record.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="max-width: 900px;">
+
+    <div class="changelog-entry">
+      <div>
+        <div class="changelog-version">v1.6.0</div>
+        <div class="changelog-date">Aug 26, 2026</div>
+      </div>
+      <div>
+        <h3>Rebrand + Price Books + Mira Dunning</h3>
+        <ul>
+          <li>Platform renamed from Provix → <strong>Trafyx</strong>. New identity, same DB.</li>
+          <li>Price Books module: reseller-specific pricing, override plans, visibility toggles.</li>
+          <li>Mira Dunning: AI-driven collections analyst with preview mode. Suspends only above 90% confidence.</li>
+          <li>Page Guides: collapsible how-to strips on every module.</li>
+          <li>NOC Watch cron ships to production (every 5 min).</li>
+          <li>Changelog page (this one).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <div>
+        <div class="changelog-version">v1.5.0</div>
+        <div class="changelog-date">Aug 26, 2026</div>
+      </div>
+      <div>
+        <h3>Mira Intelligence + Subscriber Portal v2</h3>
+        <ul>
+          <li>Mira Intelligence: staff-facing chat over live business snapshot with insight annotations.</li>
+          <li>Sidebar entry "Mira AI" (was Intelligence), moved directly under Dashboard.</li>
+          <li>Subscriber Portal v2: 5 tabs, live connection banner, Cloudflare speed test, referral code, embedded Mira chat.</li>
+          <li>Announcements table + strip in portal.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <div>
+        <div class="changelog-version">v1.4.0</div>
+        <div class="changelog-date">Aug 26, 2026</div>
+      </div>
+      <div>
+        <h3>Mira Agent — the six fronts</h3>
+        <ul>
+          <li>Ticket triage on <span class="mono">/api/mira/analyse</span> + <span class="mono">/act</span> + <span class="mono">/auto</span>.</li>
+          <li>Whitelisted actions: unblock, block, reactivate, suspend, reset_password, escalate, request_info.</li>
+          <li>90% confidence threshold, sub-90% auto-escalates.</li>
+          <li>Correctly refused to act on ticket with no subscriber (45% confidence, escalated).</li>
+          <li>Portal chat integration (window.dispatchEvent 'open-mira').</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <div>
+        <div class="changelog-version">v1.3.0</div>
+        <div class="changelog-date">Aug 27, 2026</div>
+      </div>
+      <div>
+        <h3>Prepaid Charging + Electronic Wallet</h3>
+        <ul>
+          <li><span class="mono">/api/prepaid</span> with topup, deduct, expiry-check endpoints.</li>
+          <li>Wallet UI integrated into subscriber detail, reseller pages, voucher redeem modal.</li>
+          <li>Voucher redemption tops up wallet with preview + cycle expiry display.</li>
+          <li>Supports both existing-subscriber and standalone hotspot redemption.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <div>
+        <div class="changelog-version">v1.2.0</div>
+        <div class="changelog-date">Aug 19, 2026</div>
+      </div>
+      <div>
+        <h3>Helpdesk &amp; Ticketing + Payments RLS fix</h3>
+        <ul>
+          <li>Full helpdesk module: list with filters/search/SLA, detail with reply thread, internal notes, status/priority/assign sidebar.</li>
+          <li>Payments page RLS bypass via <span class="mono">/api/payments/list</span> (service role).</li>
+          <li>Dashboard redesign: tinted KPI cards (water-fill gradient), clickable, grey secondary cards.</li>
+          <li>RADIUS page grouped by subscriber. Plans page grid/list toggle.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <div>
+        <div class="changelog-version">v1.1.0</div>
+        <div class="changelog-date">Aug 12, 2026</div>
+      </div>
+      <div>
+        <h3>Billing module rebuild + dry run</h3>
+        <ul>
+          <li>3-step invoice generate flow with duplicate prevention per cycle.</li>
+          <li>Force override mode for testing.</li>
+          <li>Bouncing dots + progress bar animations (no skeleton shimmer).</li>
+          <li>All 10 core modules verified end-to-end.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <div>
+        <div class="changelog-version">v1.0.0</div>
+        <div class="changelog-date">Jul 2026</div>
+      </div>
+      <div>
+        <h3>First production tenant live</h3>
+        <ul>
+          <li>Riser Technologies migrated fully. 500+ subscribers, live RADIUS.</li>
+          <li>FreeRADIUS 3.x deployed on managed infrastructure. Session pooler wired.</li>
+          <li>Multi-tenant WaaS beta: SSID routing via Called-Station-Id (Ruckus SmartZone format).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <div>
+        <div class="changelog-version">v0.9.0</div>
+        <div class="changelog-date">May 2026</div>
+      </div>
+      <div>
+        <h3>WaaS multi-tenant + Voucher SMS</h3>
+        <ul>
+          <li>Per-tenant white-label portal at <span class="mono">/portal/{slug}</span>.</li>
+          <li>Voucher batch generation + SMS delivery for hospitality.</li>
+          <li>Reseller pipeline + commission tracking.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <div>
+        <div class="changelog-version">v0.5.0</div>
+        <div class="changelog-date">Jan 2026</div>
+      </div>
+      <div>
+        <h3>NOC View + core modules</h3>
+        <ul>
+          <li>Subscribers, plans, invoices, payments, dunning, vouchers all live in beta.</li>
+          <li>NOC dashboard with live session traffic chart.</li>
+          <li>Dark + light theme.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="changelog-entry">
+      <div>
+        <div class="changelog-version">v0.1.0</div>
+        <div class="changelog-date">Apr 2025</div>
+      </div>
+      <div>
+        <h3>Ground zero</h3>
+        <ul>
+          <li>Next.js 14 + Supabase Postgres scaffolded.</li>
+          <li>First tenant record. First subscriber record. First RADIUS query.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="cta"><div class="wrap"><div class="cta-block">
+  <span class="eyebrow" style="justify-content:center;">Follow along</span>
+  <h2 class="mt-1">Weekly releases.<br>Big changes, small ones, all announced.</h2>
+  <div class="cta-buttons"><a href="index.html#cta" class="btn btn-primary">Book demo</a><a href="docs.html" class="btn btn-ghost">Read the docs</a></div>
+</div></div></section>
+
+<div data-footer="."></div>
+<script src="app.js"></script>
+<script src="footer.js"></script>
+</body>
+</html>

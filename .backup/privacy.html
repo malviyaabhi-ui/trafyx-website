@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Trafyx</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.legal-body { max-width: 760px; margin: 0 auto; font-size: 0.95rem; line-height: 1.65; color: var(--text-dim); }
+.legal-body h2 { color: var(--text); font-size: 1.15rem; margin-top: 32px; margin-bottom: 10px; }
+.legal-body h3 { color: var(--text); font-size: 0.98rem; margin-top: 20px; margin-bottom: 8px; }
+.legal-body p, .legal-body li { margin-bottom: 8px; }
+.legal-body ul { padding-left: 20px; margin-bottom: 12px; }
+.legal-body a { color: var(--brand); }
+.legal-meta { color: var(--text-mute); font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.05em; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="nav-inner">
+  <a href="index.html" class="nav-logo"><div class="nav-logo-mark">Tx</div><span>Trafyx</span></a>
+  <div class="nav-links"><a href="index.html">Home</a><a href="features/index.html">Features</a><a href="features/mira.html">Mira AI</a><a href="security.html">Security</a><a href="privacy.html" class="active">Privacy</a><a href="contact.html">Contact</a></div>
+  <div class="nav-cta"><button class="theme-toggle" aria-label="Toggle theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><a href="index.html#cta" class="btn btn-primary">Book demo</a><button class="nav-menu-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div>
+</div></nav>
+
+<section class="hero" style="padding-bottom: 12px;">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="wrap hero-inner">
+    <div style="max-width: 760px; margin: 0 auto;">
+      <span class="eyebrow">Privacy Policy</span>
+      <h1 class="mt-1">Your data, <span class="gradient-text">on your terms.</span></h1>
+      <p class="lead mt-2">We collect the minimum needed to run an ISP platform, and we're transparent about all of it.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 12px;">
+  <div class="wrap">
+    <div class="legal-body">
+      <div class="legal-meta">Effective: 26 August 2026 · Version 1.2 · <a href="mailto:privacy@trafyx.ai">privacy@trafyx.ai</a></div>
+
+      <h2>1. Who we are</h2>
+      <p>Trafyx is a product of Riser Technologies LLC, registered in SHAMS, Sharjah, United Arab Emirates. In this policy, "we", "us", and "Trafyx" refer to Riser Technologies LLC. If you're using Trafyx because your ISP or MSP put you on it, that ISP is the data controller for your account; Trafyx is the data processor.</p>
+
+      <h2>2. What we collect</h2>
+      <h3>Account data</h3>
+      <p>Name, email, phone number, billing address, and any ID document you upload to satisfy KYC or regulatory requirements set by your ISP or by your local telecommunications regulator (for example, UAE TDRA, Ofcom, ACMA, TRAI, FCC — whichever applies to your jurisdiction).</p>
+      <h3>Service data</h3>
+      <p>Your plan, session logs (start/end times, bytes in/out, IP addresses, NAS/router the session was on), payment records, tickets you open, and the contents of your interactions with the Mira AI agent.</p>
+      <h3>Technical data</h3>
+      <p>Browser type, device fingerprint, IP address, and cookie identifiers when you use the admin or subscriber portal.</p>
+
+      <h2>3. What we don't do</h2>
+      <ul>
+        <li>We don't sell your data. Ever. Not to advertisers, data brokers, or "partners".</li>
+        <li>We don't train third-party AI models on your data. When Mira calls Anthropic's Claude API, we use zero-retention mode: your prompt and response are not logged, not stored, not used for training.</li>
+        <li>We don't share your data across ISP tenants. Row-level security in our database enforces this at the query layer.</li>
+      </ul>
+
+      <h2>4. Why we process your data</h2>
+      <ul>
+        <li><strong>To provide the service</strong> — activate you on the network, bill you, answer your support tickets, show you your usage.</li>
+        <li><strong>To meet legal obligations</strong> — telecommunications regulators worldwide (UAE TDRA, Ofcom, ACMA, TRAI, FCC and others) typically require ISPs to retain certain session logs for a defined period; we help our ISP customers meet whichever obligation applies in their jurisdiction.</li>
+        <li><strong>To improve the platform</strong> — aggregate, anonymised usage patterns help us decide what to build next. Your individual data is never identifiable in this analysis.</li>
+      </ul>
+
+      <h2>5. Where your data lives</h2>
+      <p>Primary storage: Supabase managed Postgres. Default region is eu-west-1 (Ireland); we also offer us-east-1 (Virginia) and ap-south-1 (Mumbai) on request. Backups: encrypted at rest in the same region as the primary, with 30-day retention. Data residency is available on the MSP / Carrier tier — pick any supported region and we'll pin your data to it.</p>
+
+      <h2>6. Who else sees your data</h2>
+      <p>Only the sub-processors we need to operate. Currently: Supabase (hosting), Vercel (application delivery), Resend (email), Anthropic (Mira AI, zero-retention), your chosen payment gateway (Telr, PayTabs, Stripe, PayPal, or others depending on your region), and your chosen SMS provider. Full list on request, and 30 days' notice before any change.</p>
+
+      <h2>7. How long we keep it</h2>
+      <p>Account data: for as long as your account is active, plus 90 days after closure. Session logs: as required by law in your jurisdiction, or 12 months, whichever is shorter. Payment records: 7 years for tax purposes. Tickets: 3 years. You can request earlier deletion — see below.</p>
+
+      <h2>8. Your rights</h2>
+      <p>You can ask us to: show you what we have on you, correct it, delete it, export it in a machine-readable format, restrict how we process it, or object to specific processing. Email <a href="mailto:privacy@trafyx.ai">privacy@trafyx.ai</a>. We respond within 30 days. If we can't fulfil a request (e.g. legal retention), we'll say why.</p>
+
+      <h2>9. Cookies</h2>
+      <p>We use only strictly-necessary cookies for authentication and session management. No advertising cookies. No tracking pixels. No third-party analytics that phone home. If we ever add analytics, it will be a self-hosted, privacy-first tool with no cross-site tracking.</p>
+
+      <h2>10. Changes to this policy</h2>
+      <p>When we change this policy, we'll update the version number and date at the top and email you if the changes are material. The previous version stays available on request.</p>
+
+      <h2>11. Contact</h2>
+      <p>Privacy questions: <a href="mailto:privacy@trafyx.ai">privacy@trafyx.ai</a><br>Security disclosures: <a href="mailto:security@trafyx.ai">security@trafyx.ai</a><br>Postal: Riser Technologies LLC, SHAMS, Sharjah, UAE</p>
+
+      <p style="margin-top: 32px; padding: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; font-size: 0.85rem;">
+        This policy is written for humans. If you'd like the version for your compliance team with citations to specific regulations that apply to your jurisdiction — GDPR, CCPA, UAE Federal Law No. 45 of 2021, India DPDPA, Australia Privacy Act, or others — email <a href="mailto:privacy@trafyx.ai">privacy@trafyx.ai</a> and we'll send it.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div data-footer="."></div>
+<script src="app.js"></script>
+<script src="footer.js"></script>
+</body>
+</html>

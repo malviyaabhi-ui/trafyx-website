@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security — Trafyx</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-inner">
+  <a href="index.html" class="nav-logo"><div class="nav-logo-mark">Tx</div><span>Trafyx</span></a>
+  <div class="nav-links"><a href="./index.html">Home</a><a href="features/index.html">Features</a><a href="features/mira.html">Mira AI</a><a href="integrations.html">Integrations</a><a href="security.html" class="active">Security</a><a href="changelog.html">Changelog</a><a href="docs.html">Docs</a><a href="./contact.html">Contact</a></div>
+  <div class="nav-cta"><button class="theme-toggle" aria-label="Toggle theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><a href="index.html#cta" class="btn btn-primary">Book demo</a><button class="nav-menu-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div>
+</div></nav>
+
+<section class="hero">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="wrap hero-inner">
+    <div style="max-width: 900px;">
+      <span class="eyebrow">Security</span>
+      <h1 class="mt-1">Tenant isolation<br><span class="gradient-text">at the database level.</span></h1>
+      <p class="lead mt-2">Your subscribers' data can't be seen by another Trafyx tenant. Not by admin mistake, not by SQL injection, not by application bug. Row-level security enforces it in Postgres itself.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Sections -->
+<section>
+  <div class="wrap">
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Row-level security (RLS)</h3>
+        <p>Every user-facing table has RLS policies enforcing tenant_id match. If application code forgets a WHERE clause, Postgres returns an empty result. Data leaks between tenants are architecturally impossible.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h3>Service role separation</h3>
+        <p>Anon key access is default-deny for sensitive tables. Mutations happen through server-side API routes with a scoped service role that logs every action.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
+        <h3>Full audit log</h3>
+        <p>Every mutation across every module writes to <span class="mono">audit_events</span> with actor, tenant, target, before/after diff, and timestamp. Kept forever. Exportable.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></div>
+        <h3>Encryption in transit + at rest</h3>
+        <p>TLS 1.3 for all connections. Postgres storage AES-256 at rest via Supabase. RADIUS shared secrets stored encrypted, decrypted per-query only.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12A10 10 0 1 1 12 2M22 2L12 12"/></svg></div>
+        <h3>Daily backups</h3>
+        <p>Automated PITR-capable backups every 24 hours with 30-day retention. Restore to any point-in-time within the last 7 days on request.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>GDPR-ready + DPA on file</h3>
+        <p>Data Processing Agreement available on request. Right-to-be-forgotten flow for subscriber records. EU customers routed to eu-west-1.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI safety -->
+<section style="background: var(--bg-alt);">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="eyebrow">Mira safety</span>
+      <h2>The AI agent has its own guardrails.</h2>
+      <p>Mira runs on Claude, but she doesn't get free rein. Every action goes through the same enforcement path as a human admin.</p>
+    </div>
+
+    <div class="grid-2" style="max-width: 900px; margin: 0 auto;">
+      <div class="card"><h3 style="font-size: 1.05rem;">No arbitrary SQL</h3><p>Mira returns a JSON action from a whitelisted enum. Server code interprets it. She cannot generate or execute SQL directly.</p></div>
+      <div class="card"><h3 style="font-size: 1.05rem;">90% confidence threshold</h3><p>Autonomous actions only above 90% confidence. Anything lower escalates to a human. This threshold is configurable per action type.</p></div>
+      <div class="card"><h3 style="font-size: 1.05rem;">Tenant-scoped prompts</h3><p>Every Mira invocation is scoped to one tenant's data. Cross-tenant reasoning is architecturally prevented in the API layer.</p></div>
+      <div class="card"><h3 style="font-size: 1.05rem;">Every action logged</h3><p>Mira's actions live in the same audit log as human actions, tagged <span class="mono">[MIRA]</span>. Fully reviewable, fully reversible.</p></div>
+      <div class="card"><h3 style="font-size: 1.05rem;">No model training on your data</h3><p>Anthropic's zero-retention policy applies. Your subscriber data never trains a model, never leaves the tenant scope.</p></div>
+      <div class="card"><h3 style="font-size: 1.05rem;">Preview mode always available</h3><p>Every destructive Mira function has a preview mode. See what she'd do before you let her do it. Dunning, for example, defaults to preview.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Report a vuln -->
+<section>
+  <div class="wrap">
+    <div class="cta-block" style="text-align: left; padding: 36px;">
+      <span class="eyebrow">Responsible disclosure</span>
+      <h2 style="margin-top: 16px;">Found something?</h2>
+      <p style="margin-top: 20px;">If you've discovered a security issue, please email <a href="mailto:security@trafyx.ai" style="color: var(--brand);">security@trafyx.ai</a> — do not open a public issue. We'll acknowledge within 24 hours and work with you on responsible disclosure.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cta"><div class="wrap"><div class="cta-block">
+  <span class="eyebrow" style="justify-content:center;">Documentation</span>
+  <h2 class="mt-1">Want the full security overview?</h2>
+  <div class="cta-buttons"><a href="mailto:security@trafyx.ai" class="btn btn-primary">Request whitepaper</a><a href="docs.html" class="btn btn-ghost">Read the docs</a></div>
+</div></div></section>
+
+<div data-footer="."></div>
+<script src="app.js"></script>
+<script src="footer.js"></script>
+</body>
+</html>
