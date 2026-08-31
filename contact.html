@@ -111,13 +111,11 @@
           btn.disabled = true;
           btn.textContent = 'Sending...';
           msg.style.display = 'none';
-          var data = {};
-          new FormData(this).forEach(function(v, k) { data[k] = v; });
+          var formData = new FormData(this);
           try {
             var res = await fetch('https://formello.app/api/f/e6cbec7d-db6c-49a9-b9fb-ae3490a0b6cf', {
               method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(data)
+              body: formData
             });
             var json = await res.json();
             if (res.ok) {
