@@ -1,6 +1,14 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/mira",    "destination": "/features/mira",    "permanent": true },
+    { "source": "/waas",    "destination": "/features/waas",    "permanent": true },
+    { "source": "/billing", "destination": "/features/billing", "permanent": true },
+    { "source": "/radius",  "destination": "/features/radius",  "permanent": true },
+    { "source": "/portal",  "destination": "/features/portal",  "permanent": true },
+    { "source": "/noc",     "destination": "/features/noc",     "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
